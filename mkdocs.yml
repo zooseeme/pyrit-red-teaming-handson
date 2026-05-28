@@ -1,0 +1,72 @@
+site_name: "PyRIT Red Teaming Hands-on"
+site_description: Beginner-friendly AI red teaming workshop with PyRIT
+site_author: Community
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  icon:
+    logo: material/shield-check
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Begin Here:
+    - Overview: begin-here/index.md
+    - Setup: begin-here/00-setup.md
+  - Labs:
+    - Overview: labs/index.md
+    - Lab 0 - Validate Endpoint: labs/00-validate-endpoint.md
+    - Lab 1 - PyRIT Basics: labs/01-pyrit-basics.md
+    - Lab 2 - Safe Attacks: labs/02-safe-attacks.md
+    - Lab 3 - Review Results: labs/03-review-results.md
+  - Safety: safety.md
+  - Instructor Notes: instructor/index.md
+

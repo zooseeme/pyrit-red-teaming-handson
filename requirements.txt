@@ -1,0 +1,13 @@
+# Workshop guide
+mkdocs-material==9.6.20
+
+# Notebook runtime
+ipykernel>=6.29.0
+python-dotenv>=1.0.1
+pandas>=2.2.0
+matplotlib>=3.9.0
+
+# Model access and red teaming framework
+openai>=1.99.0
+pyrit>=0.13.0,<0.15.0
+

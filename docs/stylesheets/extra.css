@@ -1,0 +1,8 @@
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0.75rem;
+}
+
+.md-typeset code {
+  word-break: break-word;
+}
+
